@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+ ! Excerpted from "Pragmatic Guide to JavaScript",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/pg_js for more book information.
+-->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Getting geocoding for a location and photos taken there - Pocket JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="geo.css" />
+  <script type="text/javascript" src="../../prototype.js"></script>
+  <script type="text/javascript" src="placemaker.js"></script>
+  <script type="text/javascript" src="geo.js"></script>
+</head>
+<body>
+<h1>Getting geocoding for a location and photos taken there</h1>
+
+<form id="geoSearch">
+  <p>
+    <label for="edtText">Type a city/country name or full address:</label>
+    <input type="text" id="edtText" />
+    then hit
+    <input type="submit" value="Search" />
+  </p>
+</form>
+
+<p id="indicator" style="display: none;">Loading Flickr photos for <span class="loc"></span>…</p>
+
+<ul id="flickrStream"></ul>
+
+</body>
+</html>
